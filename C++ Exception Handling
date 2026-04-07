@@ -1,0 +1,24 @@
+#include<iostream.h>
+#include<conio.h>
+#include<stdexcept>
+void divide(int a, int b)
+{
+if(b==0){
+throw runtime_error("Division be zero is not allowed");
+}
+cout << "Result:" << a/b << "\n";
+}
+void main()
+{
+chrscr();
+try
+{
+divide(10,0);
+cout << "This wont be printed";
+}
+catch(const runtime error&e)
+{
+cerr << "Error" << e.what() << "\n";
+}
+getch();
+}
