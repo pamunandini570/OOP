@@ -1,0 +1,41 @@
+#include<iostream.h>
+#include<conio.h>
+class abc
+{
+      public:
+      int num1,num2;
+      float result;
+      void getData(int n1,int n2)
+      {
+            num1=n1;
+            num2=n2;
+            result=0;
+      }
+      int add()
+      {
+            result=num1+num2;
+            return result;
+      }
+};
+class displatData:public abc
+{
+      void display(float res)
+      {
+            cout << "Result:" << res;
+      }
+};
+voud main()
+{
+      clrscr();
+      int num1,num2;
+      float res;
+      cout << "Enter 1st number:";
+      cin >> num1;
+      cout << "Enter 2nd number:";
+      cin >> num2;
+      displayData obj1;
+      obj1.getData(num1,num2);
+      res=obj1.add()
+      obj1.display(res);
+      getch();
+}
